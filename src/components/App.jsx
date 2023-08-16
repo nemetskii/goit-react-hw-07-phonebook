@@ -23,7 +23,7 @@ export const App = () => {
 
   useEffect(() => {
     dispatch(fetchContacts());
-  }, []);
+  }, [dispatch]);
 
   const addContactFunction = formState => {
     const { name, number } = formState;
